@@ -1,0 +1,142 @@
+header
+    background: #101010
+    padding: 20px 50px
+    position: relative
+    .wrapper    
+        cursor: pointer
+        display: none
+        position: absolute
+        right: -30px
+        top: 15px
+        .icon
+            position: relative
+            width: 100px
+            height: 100px
+            .bottom 
+                top: 38%
+            .center 
+                top: 28%
+            .top    
+                top: 18%
+            .line   
+                position: absolute
+                height: 3px
+                background: white
+                width: 40%
+                border-radius: 5px
+                transition: all cubic-bezier(0.26,0.1,0.27,1.55) 0.25s
+                -webkit-transition: all cubic-bezier(0.26,0.1,0.27,1.55) 0.25s
+                -moz-transition: all cubic-bezier(0.26,0.1,0.27,1.55) 0.25s
+    .navigation
+        display: flex    
+        img 
+            width: 50px
+            height: 50px
+        ul
+            margin-top: 10px
+            li
+                display: inline 
+                padding-right: 10px
+                padding-left: 10px
+                a
+                    color: white
+                    text-decoration: none
+                    font-weight: 500
+                    font-size: 17px
+                    letter-spacing: 2.2px
+                    transition: color 0.4s
+                    -webkit-transition: color 0.4s
+                    -moz-transition: color 0.4s
+                    padding-bottom: 10px
+                    width: 100%
+                    position: relative
+                    &:hover 
+                        &::before
+                            content: ''
+                            position: absolute
+                            bottom: 0
+                            left: 0
+                            border-bottom: 3px solid #F9004D
+                            animation-name: border-animation
+                            animation-duration: 0.4s
+                            animation-fill-mode: forwards
+                            -webkit-animation-name: border-animation
+                            -moz-animation-name: border-animation
+                            -webkit-animation-duration: 0.4s
+                            -moz-animation-duration: 0.4s
+                            -webkit-animation-fill-mode: forwards
+                            -moz-animation-fill-mode: forward    
+                    &:hover
+                        color: $hover-color
+                        
+                        
+                        
+
+@media (max-width: 575.98px)
+    header
+        padding: 20px 0px !important
+        .wrapper
+            display: inline-block !important
+        .navigation
+            display: block !important
+            flex-direction: column
+            img 
+                margin-left: 20px
+            nav 
+                display: none    
+                ul
+                    margin-left: -20px
+                    margin-top: 20px !important
+                    li  
+                        display: block !important
+                        margin-top: 15px
+
+@media (min-width: 576px) and (max-width: 767.98px)
+    header
+        padding: 20px 0px !important
+        .wrapper
+            display: inline-block !important
+        .navigation
+            display: block !important
+            flex-direction: column
+            img 
+                margin-left: 20px
+            nav 
+                display: none    
+                ul
+                    margin-left: -20px
+                    margin-top: 20px !important
+                    li  
+                        display: block !important
+                        margin-top: 15px
+@media (min-width: 768px) and (max-width: 991.98px) 
+    header
+        padding: 20px 0px !important
+        .wrapper
+            display: inline-block !important
+        .navigation
+            display: block !important
+            flex-direction: column
+            img 
+                margin-left: 20px
+            nav 
+                display: none    
+                ul
+                    margin-left: -20px
+                    margin-top: 20px !important
+                    li  
+                        display: block !important
+                        margin-top: 15px
+
+@media (min-width: 992px) and (max-width: 1199.98px)
+
+@media (min-width: 1200px) 
+
+
+
+@keyframes border-animation
+    0%
+        width: 0%
+    100%
+        width: 100%
+            

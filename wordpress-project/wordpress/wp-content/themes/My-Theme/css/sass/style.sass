@@ -1,0 +1,42 @@
+//Variables 
+$main-background1: #191919   
+$main-background2: #101010
+$hover-color: #F9004D
+$main-color : #ffffff
+$paragraph-color:#fffb
+body    
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    letter-spacing: 0.8px
+    font-family: 'Montserrat', sans-serif
+    @import 'header'
+    @import 'features'
+        
+
+
+
+// Defaults
+.margins    
+    margin-left: 10px    
+    margin-right: 10px
+.sections-padding    
+    padding-top: 70px
+.icon.close .top
+    transform: rotate(45deg)
+    top: 28% !important
+.icon.close .center , .icon.close .bottom
+    transform: rotate(-45deg)
+    top: 28%  !important
+
+// Extenders
+%links
+    color: $hover-color
+    a
+        margin-left: 10px
+        color: rgba($color:$hover-color,$alpha:0.7)
+        transition: color 0.5s
+        -webkit-transition: color 0.5s
+        -moz-transition: color 0.5s
+        &:hover
+            color: rgba($color:$hover-color,$alpha:1)    
